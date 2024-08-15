@@ -17,10 +17,10 @@ A simple RESTful API for managing notes. This project uses Prisma as the ORM, an
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/DevAkses/backend-notes-app
+git clone https://github.com/DevAkses/notes-app
 ```
 ```bash
-cd backend-notes-app
+cd notes-app
 ```
 
 ### 2. Install Dependencies
