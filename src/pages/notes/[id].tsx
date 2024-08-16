@@ -21,7 +21,7 @@ const NoteDetail = () => {
     if (id) {
       const fetchNote = async () => {
         try {
-          const response = await axios.get(`http://localhost:3000/api/notes?id=${id}`);
+          const response = await axios.get(`http://localhost:3000/api/notes/${id}`);
           setNote(response.data);
         } catch (error) {
           console.error('Failed to fetch note:', error);

@@ -18,7 +18,7 @@ const UpdateNotePage: React.FC<UpdateNotePageProps> = ({ initialData, noteId }) 
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const { id } = context.params!;
-  const response = await axios.get(`http://localhost:3000/api/notes?id=${id}`);
+  const response = await axios.get(`http://localhost:3000/api/notes/${id}`);
   return { props: { initialData: response.data, noteId: Number(id) } };
 };
 
